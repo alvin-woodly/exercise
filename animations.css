@@ -1,0 +1,47 @@
+body{
+    background-color: whitesmoke;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+#box{
+    width:250px;
+    height: 250px;
+    background-color: darkgoldenrod;
+    text-align: center;
+    line-height: 250px;
+
+}
+
+
+
+#box:hover{
+    animation: fadeOut 5s ease-out;
+}
+
+@keyframes bounce{
+   0%,100%{
+        transform:translateX(0px);
+        border: none;
+   }
+
+   50%{
+        transform: translatex(100px);
+   }
+
+   70%{
+     border:2px solid black;
+   }
+}
+
+@keyframes fadeOut{
+
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}

@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+header{
+    text-align: center;
+}
+
+#beoordelingcontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+
+.beoordeling{
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    justify-content: justify;
+    align-content: space-evenly;
+
+    margin: .5em 3em;
+}
+
+
+.beoordeling h3{
+    text-align: center;
+}
+
+.beoordeling img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.beoordeling:hover{
+   
+    cursor: pointer;
+}
+
+.animated:hover{
+    animation: bounce 2s ease  infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+        color: orange;
+    }
+}
+
+.beoordeling h4{
+    text-align: center;
+}
